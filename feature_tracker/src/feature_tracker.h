@@ -28,13 +28,13 @@ void reduceVector(vector<int> &v, vector<uchar> status);
 class FeatureTracker
 {
   public:
-    FeatureTracker();
+    FeatureTracker() {}
 
     void readImage(const cv::Mat &_img,double _cur_time);
 
-    void setMask();
+    void filterFeaturePointsBysetMaxSuppressed();
 
-    void addPoints();
+    void addNewFeaturePoints();
 
     bool updateID(unsigned int i);
 
