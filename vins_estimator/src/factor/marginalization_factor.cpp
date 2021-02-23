@@ -1,15 +1,13 @@
 #include "marginalization_factor.h"
 
-void ResidualBlockInfo::Evaluate()
-{
+void ResidualBlockInfo::Evaluate() {
     residuals.resize(cost_function->num_residuals());
 
     std::vector<int> block_sizes = cost_function->parameter_block_sizes();
     raw_jacobians = new double *[block_sizes.size()];
     jacobians.resize(block_sizes.size());
 
-    for (int i = 0; i < static_cast<int>(block_sizes.size()); i++)
-    {
+    for (int i = 0; i < static_cast<int>(block_sizes.size()); i++) {
         jacobians[i].resize(cost_function->num_residuals(), block_sizes[i]);
         raw_jacobians[i] = jacobians[i].data();
         //dim += block_sizes[i] == 7 ? 6 : block_sizes[i];
@@ -318,11 +316,10 @@ std::vector<double *> MarginalizationInfo::getParameterBlocks(std::unordered_map
     return keep_block_addr;
 }
 
-MarginalizationFactor::MarginalizationFactor(MarginalizationInfo* _marginalization_info):marginalization_info(_marginalization_info)
-{
+MarginalizationFactor::MarginalizationFactor(MarginalizationInfo* _marginalization_info)
+        : marginalization_info(_marginalization_info) {
     int cnt = 0;
-    for (auto it : marginalization_info->keep_block_size)
-    {
+    for (auto it : marginalization_info->keep_block_size) {
         mutable_parameter_block_sizes()->push_back(it);
         cnt += it;
     }
@@ -330,8 +327,8 @@ MarginalizationFactor::MarginalizationFactor(MarginalizationInfo* _marginalizati
     set_num_residuals(marginalization_info->n);
 };
 
-bool MarginalizationFactor::Evaluate(double const *const *parameters, double *residuals, double **jacobians) const
-{
+bool MarginalizationFactor::Evaluate(double const *const *parameters,
+                                     double *residuals, double **jacobians) const {
     //printf("internal addr,%d, %d\n", (int)parameter_block_sizes().size(), num_residuals());
     //for (int i = 0; i < static_cast<int>(keep_block_size.size()); i++)
     //{
@@ -343,32 +340,27 @@ bool MarginalizationFactor::Evaluate(double const *const *parameters, double *re
     int n = marginalization_info->n;
     int m = marginalization_info->m;
     Eigen::VectorXd dx(n);
-    for (int i = 0; i < static_cast<int>(marginalization_info->keep_block_size.size()); i++)
-    {
+    for (int i = 0; i < static_cast<int>(marginalization_info->keep_block_size.size()); i++) {
         int size = marginalization_info->keep_block_size[i];
         int idx = marginalization_info->keep_block_idx[i] - m;
         Eigen::VectorXd x = Eigen::Map<const Eigen::VectorXd>(parameters[i], size);
         Eigen::VectorXd x0 = Eigen::Map<const Eigen::VectorXd>(marginalization_info->keep_block_data[i], size);
         if (size != 7)
             dx.segment(idx, size) = x - x0;
-        else
-        {
+        else {
             dx.segment<3>(idx + 0) = x.head<3>() - x0.head<3>();
             dx.segment<3>(idx + 3) = 2.0 * Utility::positify(Eigen::Quaterniond(x0(6), x0(3), x0(4), x0(5)).inverse() * Eigen::Quaterniond(x(6), x(3), x(4), x(5))).vec();
-            if (!((Eigen::Quaterniond(x0(6), x0(3), x0(4), x0(5)).inverse() * Eigen::Quaterniond(x(6), x(3), x(4), x(5))).w() >= 0))
-            {
+            if (!((Eigen::Quaterniond(x0(6), x0(3), x0(4), x0(5)).inverse() * Eigen::Quaterniond(x(6), x(3), x(4), x(5))).w() >= 0)) {
                 dx.segment<3>(idx + 3) = 2.0 * -Utility::positify(Eigen::Quaterniond(x0(6), x0(3), x0(4), x0(5)).inverse() * Eigen::Quaterniond(x(6), x(3), x(4), x(5))).vec();
             }
         }
     }
-    Eigen::Map<Eigen::VectorXd>(residuals, n) = marginalization_info->linearized_residuals + marginalization_info->linearized_jacobians * dx;
-    if (jacobians)
-    {
 
-        for (int i = 0; i < static_cast<int>(marginalization_info->keep_block_size.size()); i++)
-        {
-            if (jacobians[i])
-            {
+    Eigen::Map<Eigen::VectorXd>(residuals, n) = marginalization_info->linearized_residuals + marginalization_info->linearized_jacobians * dx;
+    if (jacobians) {
+
+        for (int i = 0; i < static_cast<int>(marginalization_info->keep_block_size.size()); i++) {
+            if (jacobians[i]) {
                 int size = marginalization_info->keep_block_size[i], local_size = marginalization_info->localSize(size);
                 int idx = marginalization_info->keep_block_idx[i] - m;
                 Eigen::Map<Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor>> jacobian(jacobians[i], n, size);

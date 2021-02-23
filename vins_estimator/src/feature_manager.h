@@ -15,11 +15,16 @@ using namespace Eigen;
 
 #include "parameters.h"
 
-class FeaturePerFrame
-{
+/**
+ * 下面为特征管理使用到的工具。
+ * FeaturePerFrame, FeaturePerId, FeatureManager
+ *
+ */
+
+
+class FeaturePerFrame {
   public:
-    FeaturePerFrame(const Eigen::Matrix<double, 7, 1> &_point, double td)
-    {
+    FeaturePerFrame(const Eigen::Matrix<double, 7, 1> &_point, double td) {
         point.x() = _point(0);
         point.y() = _point(1);
         point.z() = _point(2);
@@ -29,6 +34,7 @@ class FeaturePerFrame
         velocity.y() = _point(6); 
         cur_td = td;
     }
+
     double cur_td;
     Vector3d point;
     Vector2d uv;
@@ -41,9 +47,15 @@ class FeaturePerFrame
     double dep_gradient;
 };
 
-class FeaturePerId
-{
+class FeaturePerId {
   public:
+    FeaturePerId(int _feature_id, int _start_frame)
+            : feature_id(_feature_id),
+              start_frame(_start_frame),
+              used_num(0),
+              estimated_depth(-1.0),
+              solve_flag(0) {}
+
     const int feature_id;
     int start_frame;
     vector<FeaturePerFrame> feature_per_frame;
@@ -56,11 +68,7 @@ class FeaturePerId
 
     Vector3d gt_p;
 
-    FeaturePerId(int _feature_id, int _start_frame)
-        : feature_id(_feature_id), start_frame(_start_frame),
-          used_num(0), estimated_depth(-1.0), solve_flag(0)
-    {
-    }
+
 
     int endFrame();
 };

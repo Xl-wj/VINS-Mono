@@ -10,10 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fca68f8-f0ef-40f8-8a78-26de9cc8cb4a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/feature_tracker/launch/euroc_feature.launch" />
-      <change beforePath="$PROJECT_DIR$/feature_tracker/src/feature_tracker.cpp" afterPath="$PROJECT_DIR$/feature_tracker/src/feature_tracker.cpp" />
-      <change beforePath="$PROJECT_DIR$/feature_tracker/src/feature_tracker.h" afterPath="$PROJECT_DIR$/feature_tracker/src/feature_tracker.h" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/feature_tracker/src/feature_tracker_node.cpp" afterPath="$PROJECT_DIR$/feature_tracker/src/feature_tracker_node.cpp" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/estimator.cpp" afterPath="$PROJECT_DIR$/vins_estimator/src/estimator.cpp" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/estimator_node.cpp" afterPath="$PROJECT_DIR$/vins_estimator/src/estimator_node.cpp" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/factor/integration_base.h" afterPath="$PROJECT_DIR$/vins_estimator/src/factor/integration_base.h" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/feature_manager.cpp" afterPath="$PROJECT_DIR$/vins_estimator/src/feature_manager.cpp" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/feature_manager.h" afterPath="$PROJECT_DIR$/vins_estimator/src/feature_manager.h" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/initial/initial_alignment.h" afterPath="$PROJECT_DIR$/vins_estimator/src/initial/initial_alignment.h" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/initial/initial_ex_rotation.cpp" afterPath="$PROJECT_DIR$/vins_estimator/src/initial/initial_ex_rotation.cpp" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/initial/initial_sfm.h" afterPath="$PROJECT_DIR$/vins_estimator/src/initial/initial_sfm.h" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/utility/utility.h" afterPath="$PROJECT_DIR$/vins_estimator/src/utility/utility.h" />
+      <change beforePath="$PROJECT_DIR$/vins_estimator/src/utility/visualization.cpp" afterPath="$PROJECT_DIR$/vins_estimator/src/utility/visualization.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,103 +33,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="feature_tracker_node.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature_tracker/src/feature_tracker_node.cpp">
+      <file leaf-file-name="estimator.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <state relative-caret-position="4248">
+              <caret line="177" column="4" lean-forward="false" selection-start-line="177" selection-start-column="4" selection-end-line="177" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initial_ex_rotation.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vins_estimator/src/initial/initial_ex_rotation.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="827">
+              <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
               <folding>
-                <element signature="e#3033#3102#0" expanded="true" />
+                <element signature="e#2105#3231#0" expanded="false" />
+                <element signature="e#3233#4381#0" expanded="false" />
+                <element signature="e#4383#4926#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feature_tracker.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="parameters.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature_tracker/src/parameters.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1320">
+              <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feature_tracker.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature_tracker/src/feature_tracker.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="226" column="17" lean-forward="true" selection-start-line="226" selection-start-column="17" selection-end-line="226" selection-end-column="17" />
+            <state relative-caret-position="4584">
+              <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feature_tracker.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature_tracker/src/feature_tracker.h">
+      <file leaf-file-name="initial_ex_rotation.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vins_estimator/src/initial/initial_ex_rotation.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="996">
-              <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="24" />
+            <state relative-caret-position="744">
+              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraFactory.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/camera_model/src/camera_models/CameraFactory.cc">
+      <file leaf-file-name="parameters.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vins_estimator/src/parameters.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+            <state relative-caret-position="552">
+              <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chessboard.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/camera_model/src/chessboard/Chessboard.cc">
+      <file leaf-file-name="initial_sfm.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vins_estimator/src/initial/initial_sfm.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2304">
-              <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="480">
+              <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intrinsic_calib.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/camera_model/src/intrinsic_calib.cc">
+      <file leaf-file-name="initial_alignment.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vins_estimator/src/initial/initial_alignment.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraCalibration.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/camera_model/src/calib/CameraCalibration.cc">
+      <file leaf-file-name="feature_manager.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vins_estimator/src/feature_manager.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="1224">
+              <caret line="51" column="80" lean-forward="false" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PinholeCamera.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/camera_model/src/camera_models/PinholeCamera.cc">
+      <file leaf-file-name="feature_manager.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vins_estimator/src/feature_manager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="498" column="12" lean-forward="false" selection-start-line="498" selection-start-column="12" selection-end-line="498" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="euroc_config.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/euroc/euroc_config.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1069">
-              <caret line="48" column="57" lean-forward="false" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="euroc_feature.launch" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature_tracker/launch/euroc_feature.launch">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="1152">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,36 +141,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>FISHEYE</find>
-      <find>readParameters</find>
-      <find>NUM_OF_CAM</find>
-      <find>FISHEYE_MASK</find>
-      <find>ROW</find>
-      <find>showUndistortion</find>
-      <find>STEREO_TRACK</find>
-      <find>CAM_NAMES</find>
-      <find>config_file</find>
-      <find>config_path</find>
-      <find>trackerData</find>
-      <find>cnt_pts_id</find>
-      <find>cur_img</find>
-      <find>cur_pts</find>
-      <find>SHOW_UNDISTORTION</find>
-      <find>FREQ</find>
-      <find>show_img</find>
-      <find>forw_img</find>
-      <find>pub_restart</find>
-      <find>PUB_THIS_FRAME</find>
-      <find>pub_img</find>
-      <find>setMask</find>
-      <find>addPoints</find>
       <find>rejectWithF</find>
       <find>updateID</find>
       <find>camodocal</find>
       <find>CameraPtr</find>
+      <find>pub_count</find>
       <find>undistortedPoints</find>
       <find>distortion</find>
-      <find>pub_count</find>
+      <find>setReloFrame</find>
+      <find>ESTIMATE_EXTRINSIC</find>
+      <find>frame_count</find>
+      <find>pub_img</find>
+      <find>processIMU</find>
+      <find>g2R</find>
+      <find>Rs</find>
+      <find>Ps</find>
+      <find>addFeatureCheckParallax</find>
+      <find>processImage</find>
+      <find>getFeatureCount</find>
+      <find>Vector3d</find>
+      <find>Headers</find>
+      <find>tmp_pre_integration</find>
+      <find>sum_dt</find>
+      <find>delta_v</find>
+      <find>acc_0</find>
+      <find>FeaturePerId</find>
+      <find>CalibrationExRotation</find>
+      <find>determinant</find>
+      <find>ric</find>
+      <find>f_manager</find>
+      <find>findFundamentalMat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,8 +182,18 @@
         <option value="$PROJECT_DIR$/feature_tracker/launch/feature.launch" />
         <option value="$PROJECT_DIR$/feature_tracker/launch/euroc_feature.launch" />
         <option value="$PROJECT_DIR$/feature_tracker/src/feature_tracker.h" />
-        <option value="$PROJECT_DIR$/feature_tracker/src/feature_tracker_node.cpp" />
         <option value="$PROJECT_DIR$/feature_tracker/src/feature_tracker.cpp" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/utility/visualization.cpp" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/estimator_node.cpp" />
+        <option value="$PROJECT_DIR$/feature_tracker/src/feature_tracker_node.cpp" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/utility/utility.h" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/initial/initial_alignment.h" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/factor/integration_base.h" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/initial/initial_sfm.h" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/feature_manager.cpp" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/feature_manager.h" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/estimator.cpp" />
+        <option value="$PROJECT_DIR$/vins_estimator/src/initial/initial_ex_rotation.cpp" />
       </list>
     </option>
   </component>
@@ -185,9 +205,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2264" />
-    <option name="width" value="1659" />
-    <option name="height" value="702" />
+    <option name="x" value="1920" />
+    <option name="y" value="-2" />
+    <option name="width" value="2560" />
+    <option name="height" value="1442" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -214,70 +235,7 @@
             <path>
               <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="camera_model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="camera_model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="camera_model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="calib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="camera_model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="camera_models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="camera_model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chessboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="camera_model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="camera_model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sparse_graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="euroc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
               <item name="feature_tracker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
-              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
-              <item name="feature_tracker" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
@@ -294,7 +252,28 @@
               <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
               <item name="vins_estimator" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
+              <item name="vins_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="factor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
+              <item name="vins_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="initial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VINS-Mono" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="VINS-Mono" type="462c0819:PsiDirectoryNode" />
+              <item name="vins_estimator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -304,7 +283,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ws_aloam/src/A-LOAM/CMakeLists.txt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -337,32 +316,42 @@
       <option name="presentableId" value="Default" />
       <updated>1608707450970</updated>
       <workItem from="1608707452079" duration="10928000" />
-      <workItem from="1608775615840" duration="13490000" />
+      <workItem from="1608775615840" duration="20057000" />
+      <workItem from="1608862406599" duration="2193000" />
+      <workItem from="1608866608451" duration="801000" />
+      <workItem from="1608871319466" duration="11080000" />
+      <workItem from="1608967247300" duration="14000" />
+      <workItem from="1609122924517" duration="729000" />
+      <workItem from="1609126942182" duration="6000" />
+      <workItem from="1609134675568" duration="12725000" />
+      <workItem from="1609208513582" duration="20848000" />
+      <workItem from="1609295378802" duration="975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24418000" />
+    <option name="totallyTimeSpent" value="80356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="2560" height="1442" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14308238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14189988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1655225" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.67200613" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36536995" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -373,17 +362,88 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6144">
+          <caret line="256" column="35" lean-forward="false" selection-start-line="256" selection-start-column="35" selection-end-line="256" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/utility/visualization.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/utility/visualization.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3336">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5040">
+          <caret line="210" column="0" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/utility/visualization.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/utility/visualization.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3336">
+          <caret line="139" column="0" lean-forward="true" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8688">
+          <caret line="362" column="0" lean-forward="true" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/feature_tracker/src/feature_tracker_node.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
           <caret line="85" column="29" lean-forward="false" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
-          <folding>
-            <element signature="e#3033#3102#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -391,7 +451,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -399,7 +458,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
           <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -407,7 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -415,7 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -423,7 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -431,7 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -439,7 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2544">
           <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -452,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -460,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -469,7 +520,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="192">
             <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -479,15 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_tracker/src/parameters.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -495,7 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -503,7 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1069">
           <caret line="48" column="57" lean-forward="false" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,7 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -519,15 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_tracker/src/feature_tracker.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="996">
-          <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -535,7 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
           <caret line="93" column="16" lean-forward="true" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -543,7 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2304">
           <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -551,7 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -559,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -567,25 +592,153 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="498" column="12" lean-forward="false" selection-start-line="498" selection-start-column="12" selection-end-line="498" selection-end-column="12" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/utility/visualization.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/utility/visualization.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/utility/utility.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/utility/utility.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_tracker/src/feature_tracker.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="852">
+          <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator_node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7344">
+          <caret line="306" column="34" lean-forward="false" selection-start-line="306" selection-start-column="22" selection-end-line="306" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="121" column="21" lean-forward="false" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feature_tracker/src/feature_tracker_node.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding>
-            <element signature="e#3033#3102#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="708">
+          <caret line="148" column="45" lean-forward="false" selection-start-line="148" selection-start-column="45" selection-end-line="148" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/factor/integration_base.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/initial/initial_alignment.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/initial/initial_sfm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/feature_manager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="51" column="80" lean-forward="false" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/feature_manager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/parameters.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_tracker/src/parameters.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="55" column="23" lean-forward="false" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/initial/initial_ex_rotation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/estimator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4248">
+          <caret line="177" column="4" lean-forward="false" selection-start-line="177" selection-start-column="4" selection-end-line="177" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feature_tracker/src/feature_tracker.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="226" column="17" lean-forward="true" selection-start-line="226" selection-start-column="17" selection-end-line="226" selection-end-column="17" />
+        <state relative-caret-position="4584">
+          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vins_estimator/src/initial/initial_ex_rotation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="50" column="50" lean-forward="true" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <element signature="e#2105#3231#0" expanded="false" />
+            <element signature="e#3233#4381#0" expanded="false" />
+            <element signature="e#4383#4926#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

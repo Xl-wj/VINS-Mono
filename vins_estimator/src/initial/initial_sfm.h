@@ -13,8 +13,7 @@ using namespace std;
 
 
 
-struct SFMFeature
-{
+struct SFMFeature {
     bool state;
     int id;
     vector<pair<int,Vector2d>> observation;

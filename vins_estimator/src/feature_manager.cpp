@@ -25,71 +25,55 @@ void FeatureManager::clearState()
     feature.clear();
 }
 
-int FeatureManager::getFeatureCount()
-{
+int FeatureManager::getFeatureCount() {
     int cnt = 0;
-    for (auto &it : feature)
-    {
-
+    for (auto &it : feature) {
         it.used_num = it.feature_per_frame.size();
 
-        if (it.used_num >= 2 && it.start_frame < WINDOW_SIZE - 2)
-        {
+        if (it.used_num >= 2 && it.start_frame < WINDOW_SIZE - 2) {
             cnt++;
         }
     }
     return cnt;
 }
 
-
-bool FeatureManager::addFeatureCheckParallax(int frame_count, const map<int, vector<pair<int, Eigen::Matrix<double, 7, 1>>>> &image, double td)
-{
+/// 通过视差来决定slding windows中要边缘化哪一帧图像: 检查视差是否超过阈值 MIN_PARALLAX
+bool FeatureManager::addFeatureCheckParallax(int frame_count, const map<int, vector<pair<int, Eigen::Matrix<double, 7, 1>>>> &image, double td) {
     ROS_DEBUG("input feature: %d", (int)image.size());
     ROS_DEBUG("num of feature: %d", getFeatureCount());
     double parallax_sum = 0;
     int parallax_num = 0;
     last_track_num = 0;
-    for (auto &id_pts : image)
-    {
+
+    for (auto &id_pts : image) {
         FeaturePerFrame f_per_fra(id_pts.second[0].second, td);
 
         int feature_id = id_pts.first;
-        auto it = find_if(feature.begin(), feature.end(), [feature_id](const FeaturePerId &it)
-                          {
+        auto it = find_if(feature.begin(), feature.end(), [feature_id](const FeaturePerId &it) {
             return it.feature_id == feature_id;
-                          });
+        });
 
-        if (it == feature.end())
-        {
+        if (it == feature.end()) {
             feature.push_back(FeaturePerId(feature_id, frame_count));
             feature.back().feature_per_frame.push_back(f_per_fra);
-        }
-        else if (it->feature_id == feature_id)
-        {
+        } else if (it->feature_id == feature_id) {
             it->feature_per_frame.push_back(f_per_fra);
             last_track_num++;
         }
     }
 
-    if (frame_count < 2 || last_track_num < 20)
-        return true;
+    if (frame_count < 2 || last_track_num < 20) return true;
 
-    for (auto &it_per_id : feature)
-    {
-        if (it_per_id.start_frame <= frame_count - 2 &&
-            it_per_id.start_frame + int(it_per_id.feature_per_frame.size()) - 1 >= frame_count - 1)
-        {
+    for (auto &it_per_id : feature) {
+        if (it_per_id.start_frame <= frame_count - 2 && it_per_id.start_frame + int(it_per_id.feature_per_frame.size()) - 1 >= frame_count - 1) {
             parallax_sum += compensatedParallax2(it_per_id, frame_count);
             parallax_num++;
         }
     }
 
-    if (parallax_num == 0)
-    {
+    if (parallax_num == 0){
         return true;
-    }
-    else
-    {
+    } else {
         ROS_DEBUG("parallax_sum: %lf, parallax_num: %d", parallax_sum, parallax_num);
         ROS_DEBUG("current parallax: %lf", parallax_sum / parallax_num * FOCAL_LENGTH);
         return parallax_sum / parallax_num >= MIN_PARALLAX;
@@ -117,13 +101,11 @@ void FeatureManager::debugShow()
     }
 }
 
-vector<pair<Vector3d, Vector3d>> FeatureManager::getCorresponding(int frame_count_l, int frame_count_r)
-{
+vector<pair<Vector3d, Vector3d>> FeatureManager::getCorresponding(int frame_count_l, int frame_count_r) {
     vector<pair<Vector3d, Vector3d>> corres;
-    for (auto &it : feature)
-    {
-        if (it.start_frame <= frame_count_l && it.endFrame() >= frame_count_r)
-        {
+
+    for (auto &it : feature) {
+        if (it.start_frame <= frame_count_l && it.endFrame() >= frame_count_r) {
             Vector3d a = Vector3d::Zero(), b = Vector3d::Zero();
             int idx_l = frame_count_l - it.start_frame;
             int idx_r = frame_count_r - it.start_frame;
@@ -199,10 +181,9 @@ VectorXd FeatureManager::getDepthVector()
     return dep_vec;
 }
 
-void FeatureManager::triangulate(Vector3d Ps[], Vector3d tic[], Matrix3d ric[])
-{
-    for (auto &it_per_id : feature)
-    {
+void FeatureManager::triangulate(Vector3d Ps[], Vector3d tic[], Matrix3d ric[]) {
+
+    for (auto &it_per_id : feature) {
         it_per_id.used_num = it_per_id.feature_per_frame.size();
         if (!(it_per_id.used_num >= 2 && it_per_id.start_frame < WINDOW_SIZE - 2))
             continue;
@@ -330,24 +311,21 @@ void FeatureManager::removeBack()
     }
 }
 
-void FeatureManager::removeFront(int frame_count)
-{
-    for (auto it = feature.begin(), it_next = feature.begin(); it != feature.end(); it = it_next)
-    {
+void FeatureManager::removeFront(int frame_count) {
+    for (auto it = feature.begin(), it_next = feature.begin(); it != feature.end(); it = it_next) {
         it_next++;
 
-        if (it->start_frame == frame_count)
-        {
+        if (it->start_frame == frame_count) {
             it->start_frame--;
-        }
-        else
-        {
+
+        } else {
             int j = WINDOW_SIZE - 1 - it->start_frame;
-            if (it->endFrame() < frame_count - 1)
-                continue;
+            if (it->endFrame() < frame_count - 1) continue;
+
             it->feature_per_frame.erase(it->feature_per_frame.begin() + j);
-            if (it->feature_per_frame.size() == 0)
+            if (it->feature_per_frame.size() == 0) {
                 feature.erase(it);
+            }
         }
     }
 }

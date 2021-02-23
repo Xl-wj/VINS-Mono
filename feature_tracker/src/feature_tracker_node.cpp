@@ -146,7 +146,7 @@ void img_callback(const sensor_msgs::ImageConstPtr &img_msg) {
                     velocity_x_of_point.values.push_back(pts_velocity[j].x);
                     velocity_y_of_point.values.push_back(pts_velocity[j].y);
 
-                    ROS_INFO("publish %f, at %f", feature_points->header.stamp.toSec(), ros::Time::now().toSec());
+                    ROS_INFO("u %f, v %f", cur_pts[j].x, cur_pts[j].y);
                 }
             }
         }
@@ -156,9 +156,9 @@ void img_callback(const sensor_msgs::ImageConstPtr &img_msg) {
         feature_points->channels.push_back(v_of_point);
         feature_points->channels.push_back(velocity_x_of_point);
         feature_points->channels.push_back(velocity_y_of_point);
-        ROS_DEBUG("publish %f, at %f", feature_points->header.stamp.toSec(), ros::Time::now().toSec());
-        // skip the first image; since no optical speed on frist image
+        ROS_DEBUG("publish %s, at %f", std::to_string(feature_points->header.stamp.toSec()).c_str(), ros::Time::now().toSec());
 
+        // skip the first image; since no optical speed on frist image
         if (!init_pub) {
             init_pub = 1;
         } else

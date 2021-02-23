@@ -303,10 +303,8 @@ void process()
 
         // find out the messages with same time stamp
         m_buf.lock();
-        if(!image_buf.empty() && !point_buf.empty() && !pose_buf.empty())
-        {
-            if (image_buf.front()->header.stamp.toSec() > pose_buf.front()->header.stamp.toSec())
-            {
+        if(!image_buf.empty() && !point_buf.empty() && !pose_buf.empty()) {
+            if (image_buf.front()->header.stamp.toSec() > pose_buf.front()->header.stamp.toSec()) {
                 pose_buf.pop();
                 printf("throw pose at beginning\n");
             }
@@ -427,15 +425,13 @@ void process()
     }
 }
 
-void command()
-{
+void command() {
     if (!LOOP_CLOSURE)
         return;
-    while(1)
-    {
+
+    while(1) {
         char c = getchar();
-        if (c == 's')
-        {
+        if (c == 's') {
             m_process.lock();
             posegraph.savePoseGraph();
             m_process.unlock();
@@ -443,6 +439,7 @@ void command()
             // printf("program shutting down...\n");
             // ros::shutdown();
         }
+
         if (c == 'n')
             new_sequence();
 
